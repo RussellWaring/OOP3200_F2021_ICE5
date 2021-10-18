@@ -1,52 +1,60 @@
 #include "Vector3D.h"
 
-Vector3D::Vector3D(const float x, const float y, const float z): m_x(x), m_y(y), m_z(z)
+template<class T>
+Vector3D<T>::Vector3D(const T x, const T y, const T z): m_x(x), m_y(y), m_z(z)
 {
 }
 
-Vector3D::~Vector3D()
-{
-}
+template<class T>
+Vector3D<T>::~Vector3D()
+{}
 
-float Vector3D::GetX() const
+template<class T>
+T Vector3D<T>::GetX() const
 {
 	return m_x;
 }
 
-float Vector3D::GetY() const
+template<class T>
+T Vector3D<T>::GetY() const
 {
 	return m_y;
 }
 
-float Vector3D::GetZ() const
+template<class T>
+T Vector3D<T>::GetZ() const
 {
 	return m_z;
 }
 
-void Vector3D::setX(const float x)
+template<class T>
+void Vector3D<T>::setX(const T x)
 {
 	m_x = x;
 }
 
-void Vector3D::setY(const float y)
+template<class T>
+void Vector3D<T>::setY(const T y)
 {
 	m_y = y;
 }
 
-void Vector3D::setZ(const float z)
+template<class T>
+void Vector3D<T>::setZ(const T z)
 {
 	m_z = z;
 }
 
-void Vector3D::set(const float x, const float y, const float z)
+template<class T>
+void Vector3D<T>::set(const T x, const T y, const T z)
 {
 	m_x = x;
 	m_y = y;
 	m_z = z;
 }
 
-
-std::string Vector3D::ToString() const
+template<class T>
+std::string Vector3D<T>::ToString() const
 {
 	return "(" + std::to_string(m_x) + ", " + std::to_string(m_y) + ", " + std::to_string(m_z) + ")";
 }
