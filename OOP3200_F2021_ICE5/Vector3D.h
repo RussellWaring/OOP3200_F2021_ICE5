@@ -3,7 +3,7 @@
  * @date		2021-10-17
  * @file		OOP3200_F2021_ICE5
  * @desc		This class represents a three-dimensional vector. Created as part of
- *				the fifth in-class exercise.
+ *				the fifth in-class exercise. Can take a Vector2D as an argument.
  */
 
 #pragma once
